@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.python-version
+*.DS_Store
+
+# Virtual Environment
+venv/
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Byte-compiled / C extensions
+*.so
+
+# Test / Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# OS generated
+Thumbs.db
+.DS_Store
+
+# Download Counter
+users.json
+
+.history/
