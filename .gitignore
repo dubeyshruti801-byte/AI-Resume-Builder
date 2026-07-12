@@ -3,7 +3,8 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.python-version
+# Allow Render Python version file
+!.python-version
 *.DS_Store
 
 # Virtual Environment
