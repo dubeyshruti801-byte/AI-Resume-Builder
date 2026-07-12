@@ -217,7 +217,7 @@ GitHub:
 https://github.com/dubeyshruti801-byte
 
 LinkedIn:
-(Add your LinkedIn profile)
+https://www.linkedin.com/in/shruti-dubey-a1853b353/
 
 ---
 
