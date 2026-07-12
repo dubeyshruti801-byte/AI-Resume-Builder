@@ -6,32 +6,47 @@ The project focuses on demonstrating backend engineering skills including API de
 
 ---
 
+---
+
+# 🌐 Live Demo
+
+### Frontend (Vercel)
+
+https://ai-resume-builder-henna-three.vercel.app/
+
+### Backend API (Render)
+
+https://ai-resume-builder-backend-gjd1.onrender.com
+
+### Swagger Documentation
+
+https://ai-resume-builder-backend-gjd1.onrender.com/docs
+
 # ✨ Features
 
 ## Backend
 
-- FastAPI REST API
+- RESTful API built with FastAPI
 - Pydantic v2 request validation
-- Professional PDF generation using ReportLab
+- Professional ATS-friendly PDF generation
+- Streaming PDF responses
 - Global exception handling
 - Structured JSON logging
+- Modular project architecture
 - Security middleware
-- Request body size validation
 - Request timeout protection
-- CORS support
-- IP-based Rate Limiting (SlowAPI)
-- Per-email download limit (Maximum 3 resumes)
-- Persistent download tracking using `users.json`
-- Streaming PDF response
-- Clean project architecture
-- Modular service layer
-- Input sanitization utilities
-
+- Request body size validation
+- Input sanitization
+- IP-based rate limiting (SlowAPI)
+- Per-email download limit (3 downloads)
+- Persistent download tracking using users.json
+- CORS configuration
 ---
 
 ## Frontend
 
-- Dynamic Resume Form
+- Responsive user interface
+- Dynamic resume sections
 - Add/Remove Skills
 - Add/Remove Experience
 - Add/Remove Education
@@ -42,13 +57,13 @@ The project focuses on demonstrating backend engineering skills including API de
 - Loading overlay
 - Toast notifications
 - Automatic PDF download
-- Responsive UI
+- Clear Form functionality
 
 ---
 
 # 🛠 Tech Stack
 
-### Backend
+## Backend
 
 - Python
 - FastAPI
@@ -57,11 +72,21 @@ The project focuses on demonstrating backend engineering skills including API de
 - SlowAPI
 - Uvicorn
 
-### Frontend
+## Frontend
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
+
+## Deployment
+
+- Render
+- Vercel
+
+## Version Control
+
+- Git
+- GitHub
 
 ---
 
@@ -89,6 +114,28 @@ AI-Resume-Builder/
 ```
 
 ---
+
+---
+
+# 🏗 Architecture
+ User
+   │
+   ▼
+Frontend (Vercel)
+   │
+   ▼
+FastAPI Backend (Render)
+   │
+   ▼
+Validation
+(Pydantic)
+   │
+   ▼
+PDF Generator
+(ReportLab)
+   │
+   ▼
+Resume PDF
 
 # 📄 Resume Sections Supported
 
@@ -162,6 +209,10 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
+Create a `.env` file if required for your environment.
+
+(Current version does not require environment variables.)
+
 Run the server
 
 ```bash
@@ -182,6 +233,16 @@ http://127.0.0.1:8000/docs
 
 ---
 
+---
+
+# 🚀 Deployment
+
+Frontend is deployed on **Vercel**
+
+Backend is deployed on **Render**
+
+Both services are automatically redeployed whenever changes are pushed to the GitHub repository.
+
 # 📌 API Endpoint
 
 ### Generate Resume
@@ -192,32 +253,60 @@ POST /resumes/create
 
 Returns
 
-- PDF Resume
+- application/pdf
 
 ---
 
 # 🚧 Future Improvements
 
-- User Authentication
-- Database Integration
+- User Authentication (JWT)
+- Database Integration (PostgreSQL)
 - AI-powered Resume Suggestions
-- Resume Templates
+- Multiple Resume Templates
 - Resume History
+- Resume Versioning
 - Cloud Storage
 - Email Verification
-- Resume Analytics
+- Resume Analytics Dashboard
+- Admin Dashboard
 
+---
+
+# 💡 Skills Demonstrated
+
+- Backend API Development
+- REST API Design
+- FastAPI
+- Pydantic Validation
+- ReportLab PDF Generation
+- Frontend Development
+- DOM Manipulation
+- Error Handling
+- Security Best Practices
+- Rate Limiting
+- File Handling
+- Deployment
+- Git & GitHub
 ---
 
 # 👩‍💻 Author
 
 **Shruti Shashi Bhushan Dubey**
 
-GitHub:
+GitHub
+
 https://github.com/dubeyshruti801-byte
 
-LinkedIn:
+LinkedIn
+
 https://www.linkedin.com/in/shruti-dubey-a1853b353/
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
 
 ---
 
