@@ -44,7 +44,7 @@ class Experience(BaseModel):
         return v
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "title": "Developer",
                 "company": "OpenAI",
